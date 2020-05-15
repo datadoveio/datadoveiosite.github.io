@@ -1,0 +1,33 @@
+*, h1, h2, h3, h4, h5, p, ul {
+    margin: unset;
+    padding: unset;
+}
+
+body {
+    background-color: #242c35;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.temp {
+    margin-top: -15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    color: #d32758;
+    text-align: center;
+    font-family: "Futura";
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.logo {
+    height: 200px;
+}
+
+p {
+    margin-top: -25px;
+}
