@@ -1,7 +1,9 @@
 {
     var password = [
         "jUHzEQ9gASAc",
-        "dataDoveTestPw"
+        "4cx7avXLhNXE",
+        "2f8T8TRZe3aU",
+        "2FqBhXk64sLt"
     ];
     var userInput = "";
     document.querySelector(".form__box").addEventListener("input", function(event){
@@ -16,7 +18,7 @@
             for(var i = 0; i < password.length; i++){
                 if(password[i] == userInput){
                     console.log("CORRECT");
-                    document.querySelector(".form__para").innerHTML = "<a href='https://forms.gle/Yaavi7yuFdZMpcq5A' target='_blank'> DataDove &copy; BETA Early Access </a>";
+                    document.querySelector(".form__para").innerHTML = "<a href='https://forms.gle/qWLAQ7rFFEsEwEq36' target='_blank'>> Data Dove Beta Early Access <</a>";
                     document.querySelector(".form__para").classList.add("correct");
                     document.querySelector(".form__box").classList.add("smoothFade");
                     break;
