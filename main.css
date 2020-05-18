@@ -64,6 +64,7 @@ input {
     border: unset;
     padding: 0px 5px;
     text-align: center;
+    -webkit-appearance: none;
 }
 
 input:focus {
