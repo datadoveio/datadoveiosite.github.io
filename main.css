@@ -98,3 +98,17 @@ input ::-webkit-credentials-auto-fill-button {
 p {
     margin-top: -25px;
 }
+
+.striper {
+    margin-top: 30px;
+    display: none;
+    font-family: "Futura";
+}
+
+.displayNow {
+    display: block;
+}
+
+.striper__button {
+    background-color: #d32758;
+}

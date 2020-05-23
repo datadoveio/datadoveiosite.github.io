@@ -17,7 +17,8 @@
         if(event.keyCode == 13){
             for(var i = 0; i < password.length; i++){
                 if(password[i] == userInput){
-                    document.querySelector(".form__para").innerHTML = "<a href='https://forms.gle/Yaavi7yuFdZMpcq5A' target='_blank'> DataDove&copy; BETA Early Access </a>";
+                    document.querySelector(".striper").classList.add("displayNow");
+                    document.querySelector(".form__para").innerHTML = '';
                     document.querySelector(".form__para").classList.add("correct");
                     document.querySelector(".form__box").classList.add("smoothFade");
                     break;
