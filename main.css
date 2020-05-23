@@ -30,7 +30,7 @@ body {
     margin: auto;
     background-color: #d32758;
     margin-top: 15px;
-    border-radius: 25px;
+    /* border-radius: 25px; */
     cursor: pointer;
     transition: all .5s ease-in-out;
 }
@@ -105,7 +105,7 @@ p {
 }
 
 .displayNow {
-    display: block;
+    display: block !important;
 }
 
 .striper__button {
