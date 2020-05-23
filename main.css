@@ -101,8 +101,7 @@ p {
 
 .striper {
     margin-top: 30px;
-    display: none;
-    font-family: "Futura";
+    display: none !important;
 }
 
 .displayNow {
