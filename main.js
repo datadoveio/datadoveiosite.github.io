@@ -7,6 +7,7 @@ $(window).on("load",function(){
         overflow: "unset"
     });
     $(".loader").fadeOut("slow");
+	console.log("load1");
 });
 
 {
