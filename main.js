@@ -105,7 +105,7 @@ $(window).on("load",function(){
 function reveal() {
     for(let i = 0; i < 4; i++){
         document.querySelector(".fq__" + i).addEventListener("click", function(event){
-            // document.querySelector("#fq__" + i + "-para").classList.toggle("hidden");
+            document.querySelector("#fq__" + i + "-para").classList.toggle("hidden");
             document.querySelector("#faq__" + i + "-para").classList.toggle("revealFaq");
         });
     }
