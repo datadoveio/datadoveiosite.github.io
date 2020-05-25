@@ -99,7 +99,7 @@ $(window).on("load",function(){
         document.querySelector(".mobile__menu-slide").classList.toggle("slideThrough");
     });
 }
-}
+
 
 
 
