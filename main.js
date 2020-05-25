@@ -88,11 +88,8 @@ function scrollTo() {
 		top-=0;
         $('html,body').animate({scrollTop: top}, 'slow');
         return false;
-}
-
-
-
-document.querySelector("nav").addEventListener("click", function(){
+	
+	document.querySelector("nav").addEventListener("click", function(){
 	scrollTo();
 });
 
@@ -101,6 +98,11 @@ document.querySelector(".mobile__menu").addEventListener("click", function(){
     document.querySelector(".mobile__menu-slide").classList.toggle("slideThrough");
 });
 }
+}
+
+
+
+
 
 function reveal() {
     for(let i = 0; i < 4; i++){
