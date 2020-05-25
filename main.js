@@ -7,7 +7,7 @@ $(window).on("load",function(){
         overflow: "unset"
     });
     $(".loader").fadeOut("slow");
-	console.log("load1");
+	console.log("loadnew");
 });
 
 {
@@ -33,7 +33,6 @@ $(window).on("load",function(){
                     document.querySelector(".form__box").classList.add("hidden");
                     break;
                 }
-                document.querySelector(".form__para").innerHTML = "Wrong Password";
             }   
         }
     });
@@ -64,11 +63,10 @@ $(window).on("load",function(){
     document.querySelector(".okay").addEventListener("click", function() {
         document.querySelector(".terms").classList.remove("showTerms");
     });
-	
-	var navArray = ["nav__features", "nav__extras", "nav__faq", "nav__footer"];
+    var navArray = ["nav__features", "nav__extras", "nav__faq", "nav__footer"];
 
-	var sectionArray = [".features", ".extras", ".faq", ".footer"];
-
+    var sectionArray = [".features", ".extras", ".faq", ".footer"];
+    
     function scrollTo() {
         var clicked;
     
@@ -98,12 +96,8 @@ $(window).on("load",function(){
         scrollTo();
         document.querySelector(".mobile__menu-slide").classList.toggle("slideThrough");
     });
+    
 }
-
-
-
-
-
 
 function reveal() {
     for(let i = 0; i < 4; i++){
@@ -115,3 +109,4 @@ function reveal() {
 }
 
 reveal();
+
