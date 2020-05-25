@@ -7,7 +7,6 @@ $(window).on("load",function(){
         overflow: "unset"
     });
     $(".loader").fadeOut("slow");
-	console.log("loadnew2");
 });
 
 {
@@ -55,6 +54,9 @@ $(window).on("load",function(){
     document.querySelector(".burger__menu").addEventListener("click", function(){
         document.querySelector(".mobile__menu-slide").classList.toggle("slideThrough");
     });
+    document.querySelector(".mobile__menu").addEventListener("click", function(){
+        document.querySelector(".mobile__menu-slide").classList.toggle("slideThrough");
+    })
 
     document.querySelector(".tos").addEventListener("click", function() {
         document.querySelector(".terms").classList.add("showTerms");
@@ -63,39 +65,40 @@ $(window).on("load",function(){
     document.querySelector(".okay").addEventListener("click", function() {
         document.querySelector(".terms").classList.remove("showTerms");
     });
-//     var navArray = ["nav__features", "nav__extras", "nav__faq", "nav__footer"];
 
-//     var sectionArray = [".features", ".extras", ".faq", ".footer"];
+    // var navArray = ["nav__features", "nav__extras", "nav__faq", "nav__footer"];
+
+    // var sectionArray = [".features", ".extras", ".faq", ".footer"];
     
-//     function scrollTo() {
-//         var clicked;
+    // function scrollTo() {
+    //     var clicked;
     
-//         var goTo = "";
-//         clicked = event.target.classList;
-//         for(var i = 0; i < navArray.length; i++){
-//             if(clicked[0] == navArray[i]){
-//                 goTo = $(sectionArray[i]);
-//                 console.log(goTo);
-//             }
-//         }
+    //     var goTo = "";
+    //     clicked = event.target.classList;
+    //     for(var i = 0; i < navArray.length; i++){
+    //         if(clicked[0] == navArray[i]){
+    //             goTo = $(sectionArray[i]);
+    //             console.log(goTo);
+    //         }
+    //     }
     
         
-//             var top = goTo.offset().top;
-//             top-=0;
-//             $('html,body').animate({scrollTop: top}, 'slow');
-//             return false;
-//     }
+    //         var top = goTo.offset().top;
+    //         top-=0;
+    //         $('html,body').animate({scrollTop: top}, 'slow');
+    //         return false;
+    // }
     
     
     
-//     document.querySelector("nav").addEventListener("click", function(){
-//         scrollTo();
-//     });
+    // document.querySelector("nav").addEventListener("click", function(){
+    //     scrollTo();
+    // });
     
-//     document.querySelector(".mobile__menu").addEventListener("click", function(){
-//         scrollTo();
-//         document.querySelector(".mobile__menu-slide").classList.toggle("slideThrough");
-//     });
+    // document.querySelector(".mobile__menu").addEventListener("click", function(){
+    //     scrollTo();
+    //     document.querySelector(".mobile__menu-slide").classList.toggle("slideThrough");
+    // });
     
 }
 
