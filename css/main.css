@@ -3,6 +3,10 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, li {
   padding: unset;
 }
 
+a {
+  text-decoration: none !important;
+}
+
 body {
   background-color: #242c35;
   text-align: center;
