@@ -66,6 +66,40 @@ $(window).on("load",function(){
     document.querySelector(".okay").addEventListener("click", function() {
         document.querySelector(".terms").classList.remove("showTerms");
     });
+	
+	var navArray = ["nav__features", "nav__extras", "nav__faq", "nav__footer"];
+
+var sectionArray = [".features", ".extras", ".faq", ".footer"];
+
+function scrollTo() {
+	var clicked;
+
+	var goTo = "";
+	clicked = event.target.classList;
+	for(var i = 0; i < navArray.length; i++){
+		if(clicked[0] == navArray[i]){
+			goTo = $(sectionArray[i]);
+			console.log(goTo);
+		}
+	}
+
+	
+		var top = goTo.offset().top;
+		top-=0;
+        $('html,body').animate({scrollTop: top}, 'slow');
+        return false;
+}
+
+
+
+document.querySelector("nav").addEventListener("click", function(){
+	scrollTo();
+});
+
+document.querySelector(".mobile__menu").addEventListener("click", function(){
+    scrollTo();
+    document.querySelector(".mobile__menu-slide").classList.toggle("slideThrough");
+});
 }
 
 function reveal() {
@@ -78,37 +112,3 @@ function reveal() {
 }
 
 reveal();
-
-var navArray = ["nav__features", "nav__extras", "nav__faq", "nav__footer"];
-
-var sectionArray = [".features", ".extras", ".faq", ".footer"];
-
-// function scrollTo() {
-// 	var clicked;
-
-// 	var goTo = "";
-// 	clicked = event.target.classList;
-// 	for(var i = 0; i < navArray.length; i++){
-// 		if(clicked[0] == navArray[i]){
-// 			goTo = $(sectionArray[i]);
-// 			console.log(goTo);
-// 		}
-// 	}
-
-	
-// 		var top = goTo.offset().top;
-// 		top-=0;
-//         $('html,body').animate({scrollTop: top}, 'slow');
-//         return false;
-// }
-
-
-
-// document.querySelector("nav").addEventListener("click", function(){
-// 	scrollTo();
-// });
-
-// document.querySelector(".mobile__menu").addEventListener("click", function(){
-//     scrollTo();
-//     document.querySelector(".mobile__menu-slide").classList.toggle("slideThrough");
-// });
