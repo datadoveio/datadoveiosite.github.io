@@ -1,0 +1,113 @@
+*, h1, h2, h3, h4, h5, p, ul {
+    margin: unset;
+    padding: unset;
+}
+
+body {
+    background-color: #242c35;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.form {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.form p {
+    color: white;
+    font-size: .9rem;
+    display: block;
+    margin: auto;
+    transition: all .5s ease-in-out;
+}
+
+.form__box {
+    width: 150px;
+    height: 35px;
+    display: block;
+    margin: auto;
+    background-color: #d32758;
+    margin-top: 15px;
+    /* border-radius: 25px; */
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+.smoothFade {
+    height: 0;
+    visibility: 0;
+    opacity: 0;
+    display: none;
+}
+
+a {
+    color: unset;
+    text-decoration: none;
+}
+
+.remove {
+    opacity: 0;
+}
+
+.correct {
+    color: #d32758 !important;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+.correct:hover {
+    color: white !important;
+}
+
+input {
+    border: unset;
+    padding: 0px 5px;
+    text-align: center;
+    -webkit-appearance: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+input ::-webkit-credentials-auto-fill-button {
+    margin: 0;
+    width: 0;
+    background-color: transparent;
+  }
+
+.temp {
+    margin-top: -15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    color: #d32758;
+    text-align: center;
+    font-family: "Futura";
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.logo {
+    height: 200px;
+}
+
+p {
+    margin-top: -25px;
+}
+
+.striper {
+    margin-top: 30px;
+    display: none !important;
+}
+
+.displayNow {
+    display: block !important;
+}
+
+.striper__button {
+    background-color: #d32758;
+}
