@@ -7,11 +7,15 @@ a {
   text-decoration: none !important;
 }
 
+p {
+  font-size: .9rem;
+  color: gray;
+}
+
 body {
-  background-color: #242c35;
+  background-color: #11151a;
   text-align: center;
   font-family: "Quicksand";
-  background-image: url("../images/darkbg2.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -25,8 +29,8 @@ ul {
 
 h1, h2, h3, h4, h5, h6 {
   color: #FF2765;
-  font-weight: bolder;
-  font-family: "Cocogoose";
+  font-weight: bold;
+  font-family: "Quicksand";
 }
 
 * {
@@ -269,6 +273,7 @@ nav li:hover {
 
 .header p {
   margin: 30px 0;
+  color: white;
 }
 
 .logo {
@@ -298,7 +303,6 @@ nav li:hover {
   background-color: #FF2765;
   display: inline-block;
   border-radius: 25px;
-  padding: 12px 25px;
 }
 
 .twitter__button a {
@@ -328,10 +332,10 @@ section {
 }
 
 .features__tile {
-  border: 2px solid #B5F8FE;
-  border-radius: 5px;
+  border: 1px solid #4b787c;
+  border-radius: 2px;
   min-height: 200px;
-  width: 250px;
+  width: 80%;
   text-align: center;
   display: block;
   margin: auto;
@@ -340,6 +344,21 @@ section {
   position: relative;
   -webkit-box-shadow: 3px 3px 10px #222;
           box-shadow: 3px 3px 10px #222;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.features__tile:hover {
+  -webkit-transform: scale(1.035);
+          transform: scale(1.035);
+  border: 1px solid #B5F8FE;
+  -webkit-box-shadow: 5px 5px 15px black;
+          box-shadow: 5px 5px 15px black;
+}
+
+.features__tile-img {
+  height: 50px;
+  margin-bottom: 10px;
 }
 
 .features__tile-center {
@@ -348,6 +367,7 @@ section {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  width: 90%;
 }
 
 .features__tile h2 {
