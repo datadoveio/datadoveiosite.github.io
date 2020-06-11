@@ -479,7 +479,6 @@ section {
 .footer {
     background-color: rgb(27, 33, 41);
     margin-top: 50px;
-    margin-bottom: 60px;
     height: 150px;
     position: relative;
     text-align: center;
@@ -664,4 +663,70 @@ section {
 		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
 		transform: translatey(0px);
 	}
+}
+
+
+/***CALENDAR**/
+
+.active__tab {
+    color: #FF2765;
+}
+.calendar__gallery {
+
+}
+
+.calendar {
+    &__contain {
+        margin-top: 150px;
+        margin-bottom: 75px;
+        & .header__head {
+            margin-bottom: 30px;
+        }
+    }
+    &__tile {
+        height: 275px;
+        width: 275px;
+        margin: 2%;
+        background-color: white;
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        transition: all .3s ease-in-out;
+        &:hover {
+            transform: translateY(-10px);
+            box-shadow: 3px 3px 5px black;
+        }
+        & .date {
+            color: white;
+            font-weight: bold;
+            padding: 5px;
+            background-color: #FF2765;
+            display: inline-block;
+            padding-left: 10px;
+            padding-right: 10px;
+            margin-bottom: 5px;
+        }
+        & .name {
+            // color: white;
+        }
+    }
+    &__right {
+        width: 80%;
+        margin-left: 10%;
+        height: 33%;
+        padding-top: 15px;
+        text-align: left;
+        position: absolute;
+        bottom: -20px;
+        padding-bottom: 20px;
+    }
+    &__left {
+        width: 100%;
+    }
+
+}
+
+.sneaker {
+    width: 80%;
+    padding-top: 20px;
 }

@@ -99,3 +99,8 @@ function reveal() {
 
 reveal();
 
+fetch('http://www.json-generator.com/api/json/get/cftRqVKVrC?indent=2')
+ .then(response => response.json())
+ .then(data => {
+ console.log(data.calendar);
+})
