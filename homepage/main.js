@@ -43,22 +43,7 @@ $(window).on("load",function(){
         $('html,body').animate({scrollTop: top}, 'slow');
         return false;
     });
-
-    document.querySelector(".closed").addEventListener("mouseover", function(){
-        document.querySelector(".comingsoon").classList.remove("hidden");
-    });
-
-    document.querySelector(".closed").addEventListener("mouseout", function(){
-        document.querySelector(".comingsoon").classList.add("hidden");
-    });
-
-    document.querySelector(".burger__menu").addEventListener("click", function(){
-        document.querySelector(".mobile__menu-slide").classList.toggle("slideThrough");
-    });
-    document.querySelector(".mobile__menu").addEventListener("click", function(){
-        document.querySelector(".mobile__menu-slide").classList.toggle("slideThrough");
-    })
-
+    
     document.querySelector(".tos").addEventListener("click", function() {
         document.querySelector(".terms").classList.add("showTerms");
     });

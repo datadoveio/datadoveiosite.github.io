@@ -30,7 +30,7 @@
             </ul>
         </div>
 
-        <div class="mobile__menu-slide">
+        <!-- <div class="mobile__menu-slide">
             <div class="mobile__ul">
                 <img class="burger__menu" src="images/menu.png">
             </div>
@@ -40,41 +40,61 @@
                 <li class="nav__faq"><a href="#faq">FAQ</a></li>
                 <li class="nav__footer"><a href="#footer">Contact</a></li>
             </ul>
+        </div> -->
+
+        <div class="mobile__nav">
+            <ul>
+                <li><img class="mobile__nav-icon" src="images/home.svg">Home</li>
+                <li><img class="mobile__nav-icon" src="images/information.svg">FAQ</li>
+                <li><img class="mobile__nav-icon" src="images/calendar-2.svg">Calendar</li>
+                <li><img class="mobile__nav-icon" src="images/email-3.svg">Contact</li>
+            </ul>
         </div>
 
-        <div class="container">
+        <div id="container" class="container">
 
             <nav>
                 <div class="temp__nav"></div>
                 
                 <ul class="desktop__ul">
                     <img class="logo__desktop" src="images/mainlogo.png">
-                    <li class="nav__features"><a href="#features">Features</a></li>
-                    <li class="nav__extras"><a href="#extras">Extras</a></li>
+                    <!-- <li class="nav__features"><a href="#container">Home</a></li> -->
                     <li class="nav__faq"><a href="#faq">FAQ</a></li>
-                    <li class="closed">Calendar
-                        <div class="comingsoon hidden" style="text-decoration: none;">coming soon</div>
-                    </li>
+                    <li class="mav__calendar"><a href="">Calendar</a></li>
                     <li class="nav__footer"><a href="#footer">Contact</a></li>
                 </ul>
-                <div class="mobile__ul">
-                    <img class="burger__menu" src="images/menu.png">
-                </div>
             </nav>
 
             <header class="header">
                 <div class="header__both">
                     <div class="header__left both__side">
                         <img class="logo" src="images/mainlogo.png">
-                        <h1 class="header__head">Join the <span class="sep">Revolution.</span></h1>
+                        <h1 class="header__head">Join the <span class="sep">Revolution</span></h1>
                         <p>DataDove is a premium group based on the platform - discord. Our group is focused on securing the most coveted and hype products on the market. We will assist you with tools, guides, methods, and 1-1 support throughout your journey.</p>
                         <div class="twitter__button">
-                            <div style="width: 300px; text-align: center;"> <button target="_blank" style="font-family: sans-serif; margin: 0 auto; outline: none; display: block; height: 45px; width: 226px; border-radius: 6px; background: rgba(0, 0, 0, 0.631373); color: white; box-shadow: 1px 1px 3px 0 rgba(0,0,0,.03); font-size: 18px; font-weight: 700; border: none; cursor: pointer;" class="lp5706722144681984">Join Discord</button> </div>
+                            <div style="width: 300px; text-align: center;">
+                                <button target="_blank"
+                                style="font-family: Quicksand;
+                                outline: none;
+                                display: block;
+                                height: 40px;
+                                width: 175px;
+                                border-radius: 6px;
+                                background: #FF2765;
+                                color: white;
+                                box-shadow: 1px 1px 3px 0 rgba(0,0,0,.03);
+                                font-size: 14px;
+                                font-weight: 500;
+                                letter-spacing: 1px;
+                                border: none;
+                                cursor: pointer;"
+                                class="lp4629942092693504 join__button">Join Discord</button>
+                              </div>
                         </div>
                         
                     </div>
                     <div class="header__right both__side">
-                        <img class="hero animate__animated animate__fadeInRight animate__slow animate__delay-1s" src="images/blueshoePSD.png">
+                        <img class="hero animate__animated animate__fadeInRight animate__slow animate__delay-1s" src="images/sneakerbg.png">
                     </div>
                     <div class="down">
                         <img class="down__arrow animate__animated animate__fadeInDown animate__infinite animate__slow" src="images/down.png">
@@ -83,40 +103,45 @@
             </header>
 
             <section id="features" class="features">
-                <h2 class="section__header">FEATURES</h2>
+                <h2 class="section__header">Features</h2>
                 <div class="features__content">
 
-                    <div class="features__tile">
-                        <div class="features__tile-center">
-                            <img class="features__tile-img" src="images/imac.svg">
-                            <h2>Lightning Fast Monitors</h2>
-                            <p>Monitoring over 50+ sites and Twitter accounts so you never miss out</p>
+                    <div class="row">
+                        <div class="features__tile">
+                            <div class="features__tile-center">
+                                <img class="features__tile-img" src="images/imac.svg">
+                                <h2>Lightning Fast Monitors</h2>
+                                <p>Monitoring over 50+ sites and Twitter accounts so you never miss out</p>
+                            </div>
+                        </div>
+    
+                        <div class="features__tile">
+                            <div class="features__tile-center">
+                                <img class="features__tile-img" src="images/toolbox.svg">
+                                <h2>Toolbox</h2>
+                                <p>Providing Tools for members to allow ease of access featuring price checkers, generators, and more!</p>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="features__tile">
-                        <div class="features__tile-center">
-                            <img class="features__tile-img" src="images/toolbox.svg">
-                            <h2>Toolbox</h2>
-                            <p>Providing Tools for members to allow ease of access featuring price checkers, generators, and more!</p>
+                    
+                    <div class="row">
+                        <div class="features__tile">
+                            <div class="features__tile-center">
+                                <img class="features__tile-img" src="images/headphones.svg">
+                                <h2>Dedicated Support</h2>
+                                <p>Our on-site and off-site support team is at your service</p>
+                            </div>
+                        </div>
+    
+                        <div class="features__tile">
+                            <div class="features__tile-center">
+                                <img class="features__tile-img" src="images/group.svg">
+                                <h2>A1 Community</h2>
+                                <p>We strive to provide a welcoming environment so we're not only cooking together, but growing as a family.</p>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="features__tile">
-                        <div class="features__tile-center">
-                            <img class="features__tile-img" src="images/headphones.svg">
-                            <h2>Dedicated Support</h2>
-                            <p>Our on-site and off-site support team is at your service</p>
-                        </div>
-                    </div>
-
-                    <div class="features__tile">
-                        <div class="features__tile-center">
-                            <img class="features__tile-img" src="images/group.svg">
-                            <h2>A1 Community</h2>
-                            <p>We strive to provide a welcoming environment so we're not only cooking together, but growing as a family.</p>
-                        </div>
-                    </div>
+                    
 
                 </div>
             </section>
@@ -125,13 +150,14 @@
                 <div class="extras__contain">
 
                 
-                <h2 class="section__header">EXTRAS</h2>
+                <h2 class="section__header">Extras Coming Soon</h2>
                 <div class="extras__content">
 
                     <div class="extras__tile">
+                        <div class="extras__tile-icon"></div>
                         <div class="extras__tile-content">
                             <h2>Raffle Lists</h2>
-                            <p>Sit back as we bring all your raffles for you to enter</p>
+                            <p>Sit back as we bring all your raffles for you to enter so you never miss out!</p>
                         </div>
                     </div>
 
@@ -152,7 +178,7 @@
                     <div class="extras__tile">
                         <div class="extras__tile-content">
                             <h2>Groupbuys & Partnerships</h2>
-                            <p>Lifelong partnerships to build and grow together.</p>
+                            <p>Exclusive lifelong partnerships and groupbuys to build and grow together.</p>
                         </div>
                     </div>
 
@@ -161,7 +187,7 @@
             </section>
 
             <section id="faq" class="faq">
-                <h2 class="section__header">FREQUENTLY ASKED QUESTIONS</h2>
+                <h2 class="section__header">Frequently Asked Questions</h2>
                 <div class="faq__content">
                     
                     <div class="row">
@@ -176,7 +202,7 @@
                         <div id="faq__1" class="faq__tile fq__1">
                             <p class="fq__1">What makes us different?</p>
                             <div id="faq__1-para" class="faq__para fq__1">
-                                <p id="fq__1-para" class="fq__1 hidden">Dedicated team that focuses on beginner level reselling and manually copping. We will help you make that transition from rookie to expert in no time. Promoting independency.</p>
+                                <p id="fq__1-para" class="fq__1 hidden">Dedicated team that focuses on beginner level reselling and manually copping. We will help you make that transition from rookie to expert in no time.</p>
                             </div>
                         </div>
 
@@ -216,7 +242,7 @@
 
         </div>
         <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-        <script src="https://launchpass.com/p/base/embed.js"></script>
+        <script src="https://launchpass.com/datadove-beta/verify/embed.js"></script>
         <script src="main.js"></script>
     </body>
 </html>
