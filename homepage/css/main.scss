@@ -18,7 +18,7 @@ body {
     background-color: #11151a;
     text-align: center;
     font-family: "Quicksand";
-    // background-image: url("../images/darkbg2.png");
+    background-image: url("../images/brickbg.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -43,15 +43,16 @@ h1, h2, h3, h4, h5, h6 {
 .terms {
     display: none;
     width: 350px;
-    padding: 30px 0;
-    background-color: black;
+    padding: 50px 0 20px 0;
+    background-color: #111;
     position: fixed;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border: 2px solid gray;
+    box-shadow: 0 0 5px black;
     border-radius: 5px;
     z-index: 290;
+    transition: all .5s ease-in-out;
     &__list {
         width: 85%;
         margin-left: 7.5%;
@@ -62,7 +63,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .showTerms {
+    transition: all .5s ease-in-out;
     display: block;
+    top: 50%;
+
 }
 
 .final {
@@ -179,6 +183,31 @@ nav {
     display: none;
 }
 
+.mobile__nav {
+    width: 100%;
+    height: 60px;
+    background-color: #11151a;
+    box-shadow: 0 -2px 3px rgba(0,0,0,0.3);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 300;
+    &-icon { 
+        height: 17px;
+        display: block;
+        margin: auto;
+        margin-bottom: 5px;
+    }
+    & ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        height: 100%;
+        align-items: center;
+        font-size: .8rem;
+    }
+}
+
 .burger__menu {
     width: 100%;
 }
@@ -222,7 +251,7 @@ nav {
     height: 100vh;
     position: relative;
     &__head {
-        font-family: "Quicksand";
+        font-family: "Mont";
         text-transform: uppercase;
     }
     &__both {
@@ -231,13 +260,13 @@ nav {
         left: 50%;
         transform: translate(-50%, -50%);
         width: 100%;
-        padding-top: 100px;
+        padding-top: 50px;
     }
     &__right {
         display: none;
     }
     & p {
-        margin: 30px 0;
+        margin: 20px 0 30px 0;
         color: white;
     }
 }
@@ -265,7 +294,6 @@ nav {
 }
 
 .twitter__button {
-    background-color: #FF2765;
     display: inline-block;
     border-radius: 25px;
     // padding: 12px 25px;
@@ -275,10 +303,40 @@ nav {
         width: 100%;
         height: 100%;
     }
+    & .couponLink {
+        text-align: left;
+        font-size: 12px !important;
+        color: rgb(139, 9, 46) !important;
+        padding: 10px 0 !important;
+    }
+    & .couponLink:hover {
+        transition: all .2s ease-in-out;
+        color: #FF2765 !important;
+    }
+}
+
+.join__button:hover {
+    transition: all .2s ease-in-out;
+    background-color: rgb(150, 25, 60) !important;
+}
+
+.lp5706722144681984:hover {
+    transition: all .2s ease-in-out;
+    background-color: rgb(150, 25, 60) !important;
+}
+
+.join__button {
+    margin: auto !important;
+}
+
+.twitter__button .couponLink {
+    margin: auto !important;
+    text-align: center;
 }
 
 .hero {
-    width: 100%;
+    width: 80%;
+    animation: float 10s ease-in-out infinite !important;
 }
 
 section {
@@ -287,7 +345,8 @@ section {
 
 .section__header {
     padding-bottom: 30px;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
+    font-family: "Mont";
 }
 
 .down {
@@ -300,6 +359,7 @@ section {
 
 .features {
     &__tile {
+        background-color: rgba(0, 0, 0, .65);
         border: 1px solid rgb(75, 120, 124);
         border-radius: 2px;
         min-height: 200px;
@@ -342,44 +402,60 @@ section {
 }
 
 .extras {
-    background-color: #15191F;
+    background-color: rgba(27, 33, 41, .85);
     &__tile {
+        position: relative;
+        background-color: rgba(27, 33, 41, 1);
+        transition: all .3s ease-in-out;
+        &:hover {
+            transform: translateY(-10px);
+            box-shadow: 7px 7px 25px #111;
+        }
         & h2 {
             font-family: "Quicksand";
             margin-bottom: 20px;
             text-transform: uppercase;
+            font-size: 1.25rem;
         }
+        border-radius: 5px;
         width: 85%;
         border-left: 3px solid #FF2765;
-        background-color: #04060A;
         padding: 30px 0;
         margin: 20px 0;
         margin-left: 7.5%;
-        height: 151px;
         text-align: left;
         vertical-align: top;
+        box-shadow: 2px 2px 20px #111;
+        &-icon {
+
+        }
         &-content {
             padding: 25px;
+
         }
     }
 }
 
 .faq {
     &__tile {
-        border: 2px solid #B5F8FE;
+        border: 1px solid #11151a;
+        background-color: #11151a;
         padding: 20px 25px;
         width: 60%;
         margin: auto;
-        border-radius: 3px;
+        border-radius: 2px;
         margin-top: 10px;
         margin-bottom: 10px;
         cursor: pointer;
         transition: all .5s ease-in-out;
         height: auto;
         overflow: hidden;
-        box-shadow: 3px 3px 10px #222;
-        &:hover {
-            color: #FF2765 !important;
+        color: gray;
+        transition: all .2s ease-in-out;
+        color: white;
+        &:hover p {
+            transition: all .2s ease-in-out;
+            color: white;
         }
     }
     &__para {
@@ -401,8 +477,9 @@ section {
 }
 
 .footer {
-    background-color: #15191F;
+    background-color: rgb(27, 33, 41);
     margin-top: 50px;
+    margin-bottom: 60px;
     height: 150px;
     position: relative;
     text-align: center;
@@ -414,6 +491,8 @@ section {
         padding: 17px;
         background-color: #FF2765;
         display: inline-block;
+        box-shadow: 0 0 7px #111;
+        transition: all .3s ease-in-out;
     }
     a {
         text-decoration: none;
@@ -434,6 +513,11 @@ section {
     src: url("../fonts/Cocogoose\ Pro-trial.ttf");
 }
 
+@font-face {
+    font-family: "Mont";
+    src: url("../fonts/Mont-HeavyDEMO.otf");
+}
+
 .animate__fadeIn {
     display: block;
 }
@@ -441,6 +525,21 @@ section {
 .hidden {
     height: 0;
     
+}
+
+@media only screen and (min-width: 525px) {
+    .features__tile {
+        width: 410px;
+    }
+}
+
+@media only screen and (min-width: 545px) {
+    .header p {
+        width: 425px;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
 }
 
 @media only screen and (min-width: 590px) {
@@ -456,7 +555,7 @@ section {
 @media only screen and (min-width: 880px) {
     .features__tile {
         display: inline-block;
-        margin: 2%;
+        margin: 10px;
     }
     .extras__tile {
         display: inline-block;
@@ -470,10 +569,14 @@ section {
     }
 }
 
+.mobile__nav {
+    display: none;
+}
+
 @media only screen and (max-width: 960px) {
-    .desktop__ul {
-        display: none;
-    }
+    // .desktop__ul {
+    //     display: none;
+    // }
     .mobile__ul {
         display: block;
     }
@@ -486,6 +589,16 @@ section {
 }
 
 @media only screen and (min-width: 1150px) {
+    .join__button {
+        margin: unset !important;
+    }
+    .twitter__button .couponLink {
+        margin: 5px 0 0 0 !important;
+        text-align: left;
+    }
+    .couponForm {
+        margin: 10px 0 0 0 !important;
+    }
     .header {
         & .logo {
             display: none;
@@ -497,9 +610,14 @@ section {
             display: inline-block;
             text-align: right;
         }
+        & p {
+            margin: unset;
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
     }
     .hero {
-        width: 90%;
+        width: 80%;
     }
     .both__side {
         width: 45%;
@@ -520,6 +638,10 @@ section {
 
 .tos {
     cursor: pointer;
+    transition: all .3s ease-in-out;
+    &:hover {
+        color: #B5F8FE;
+    }
 }
 
 @media only screen and (min-width: 1555px) {
@@ -527,4 +649,19 @@ section {
         width: 1540px;
         margin: auto;
     }
+}
+
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
 }
