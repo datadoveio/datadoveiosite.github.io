@@ -146,10 +146,15 @@ nav {
             }
         }
         &:hover {
-            color: #FF2765;
-            border-bottom: 2px solid #FF2765;
+            // color: #FF2765 !important;
+            // border-bottom: 2px solid #FF2765;
         }
     }
+}
+
+.hovertext:hover {
+    transition: all .2s ease-in-out;
+    color: #FF2765;
 }
 
 .form__box {
@@ -181,6 +186,19 @@ nav {
     border-radius: 2px;
     cursor: pointer;
     display: none;
+}
+
+.nav {
+    &__footer {
+        padding: unset;
+        margin: unset;
+        margin-top: 25px;
+    }
+    &__calendar {
+        padding: 10px;
+        background-color: #FF2765;
+        border-radius: 5px;
+    }
 }
 
 .mobile__nav {
