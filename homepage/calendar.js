@@ -13,7 +13,7 @@ $(window).on("load",function(){
 {
 
 
-fetch('http://www.json-generator.com/api/json/get/cbinIQdzEy?indent=2')
+fetch('https://www.json-generator.com/api/json/get/cbinIQdzEy?indent=2')
  .then(response => response.json())
  .then(data => {
  console.log(data.calendar);
