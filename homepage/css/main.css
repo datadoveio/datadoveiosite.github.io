@@ -216,6 +216,7 @@ nav li.closed .comingsoon {
   padding: unset;
   margin: unset;
   margin-top: 25px;
+  margin: 25px 15px 0 15px;
 }
 
 .nav__calendar {
@@ -653,6 +654,10 @@ section {
   display: none;
 }
 
+.logo__desktop {
+  display: none;
+}
+
 @media only screen and (max-width: 960px) {
   .mobile__ul {
     display: block;
@@ -666,6 +671,9 @@ section {
 }
 
 @media only screen and (min-width: 1150px) {
+  .logo__desktop {
+    display: block;
+  }
   .join__button {
     margin: unset !important;
   }
@@ -776,6 +784,7 @@ section {
 }
 
 .calendar__contain {
+  background-color: rgba(255, 255, 255, 0.5);
   margin-top: 150px;
   margin-bottom: 75px;
 }
